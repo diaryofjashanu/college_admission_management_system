@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=`, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'candidate/css/resume_upload.css' %}">
+</head>
+<body>
+ <div class="wrapper">
+    <header>File Uploader JavaScript</header>
+    <form action="#">
+        <input type="file" class="file-input" hidden>
+        <i class="fas fa-cloud-upload-alt"></i>
+        <p>Browse File to Upload</p>
+    </form>
+    <section class="progress-area">
+        <li class="row">
+            <i class="fas fa-file-alt"></i>
+            <div class="content">
+            <div class="detail">
+                <span class="name">image_01.png . Uploading</span>
+                <span class="percent">50%</span>
+            </div>
+            <div class="progress-bar">
+                <div class="progress"></div>
+                </div>
+            </div>
+        </li>
+    </section>
+    <section class="Upload-area">
+        <li class="row">
+          <div class="content">
+            <i class="fas fa-file-alt"></i> 
+            <div class="detail">
+                <span class="name">image_01.png . Uploaded</span>
+                <span class="size">70 KB </span>
+            </div>
+          </div>
+          <i class="fas fa-check"></i>
+        </li>
+    </section>
+ </div>   
+
+    <script src="{% static 'candidate/js/resume_upload.js' %}"></script>
+</body>
+</html>

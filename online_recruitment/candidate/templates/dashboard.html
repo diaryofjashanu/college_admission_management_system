@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+
+<head>
+    <title></title>
+    <link rel="stylesheet" href="{% static 'candidate/css/Dashboard.css'  %}" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+
+<body>
+
+    <div id="mySidenav" class="sidenav">
+        <p class="logo"><span>M</span>-SoftTech</p>
+        <a href="#" class="icon-a"><i class="fa fa-dashboard icons"></i>&nbsp;&nbsp;Dashboard</a>
+        <a href="#" class="icon-a"><i class="fa fa-user icons"></i>&nbsp;&nbsp;Customers</a>
+        <a href="#" class="icon-a"><i class="fa fa-list icons"></i>&nbsp;&nbsp;Projects</a>
+        <a href="#" class="icon-a"><i class="fa fa-shopping-bag icons"></i>&nbsp;&nbsp;Orders</a>
+        <a href="#" class="icon-a"><i class="fa fa-tasks icons"></i>&nbsp;&nbsp;Inventory</a>
+        <a href="#" class="icon-a"><i class="fa fa-user icons"></i>&nbsp;&nbsp;Accounts</a>
+        <a href="#" class="icon-a"><i class="fa fa-list-alt icons"></i>&nbsp;&nbsp;Tasks</a>
+
+    </div>
+    <div id="main">
+        <div class="head">
+            <div class="col-div-6">
+                <span style="font-size: 30px; cursor: pointer;color: antiquewhite;" class="nav">&#9776; Dashboard</span>
+                <span style="font-size: 30px; cursor: pointer;color: antiquewhite;" class="nav2">&#9776;
+                    Dashboard</span>
+            </div>
+            <div class="col-div-6">
+                <div class="profile"></div>
+                <img src="https://th.bing.com/th/id/OIP.caPhxrcO8w31TbfZLFgs0wHaHC?rs=1&pid=ImgDetMain" height="30px"
+                    width="30px" class="pro-img">
+                <p>jashan kahlon<span>UI /UX DESIGNER</span></p>
+            </div>
+        </div>
+
+        <div class="clearfix"></div>
+
+        <div class="col-div-3">
+            <div class="box">
+                <p>67<br /><span>Customers</span></p>
+                <i class="fa fa-users bpx-icon"></i>
+            </div>
+        </div>
+
+        <div class="col-div-3">
+            <div class="box">
+                <p>88<br /><span>Projects</span></p>
+                <i class="fa fa-list bpx-icon"></i>
+            </div>
+        </div>
+
+        <div class="col-div-3">
+            <div class="box">
+                <p>99<br /><span>Orders</span></p>
+                <i class="fa fa-shopping-bag bpx-icon"></i>
+            </div>
+        </div>
+
+        <div class="col-div-3">
+            <div class="box">
+                <p>78<br /><span>Tasks</span></p>
+                <i class="fa fa-tasks bpx-icon"></i>
+            </div>
+        </div>
+
+        <div class="clearfix"></div>
+        <br /><br />
+
+        <div class="col-div-8">
+            <div class="box-8">
+                <div class="content-box">
+                    <p>Top Selling Projects <span>View All</span></p>
+                    <br />
+                    <table>
+                        <tr>
+                            <th>Company</th>
+                            <th>Contact</th>
+                            <th>Country</th>
+                        </tr>
+                        <tr>
+                            <td>Alfred Futterkiste</td>
+                            <td>Alfred </td>
+                            <td>Futterkiste</td>
+                        </tr>
+                        <tr>
+                            <td>Alfred Futterkiste</td>
+                            <td>Alfred </td>
+                            <td>Futterkiste</td>
+                        </tr>
+                        <tr>
+                            <td>Alfred Futterkiste</td>
+                            <td>Alfred </td>
+                            <td>Futterkiste</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-div-4">
+            <div class="box-4">
+                <div class="content-box">
+                    <p>Total Sale<span>View All</span></p>
+                    
+                    <div class="circle-wrap">
+                        <div class="circle">
+                            <div class="mask full">
+                                <div class="fill"></div>
+                            </div>
+                            <div class="mask half">
+                                <div class="fill"></div>
+                            </div>
+                            <div class="inside-circle">70%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="clearfix"></div>
+
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script type="text/javascript">
+        $(".nav").click(function () {
+            $("#mysidenav").css('width', '70px');
+            $("#main").css('margin-left', '70px');
+            $(".logo").css('visibility', 'hidden');
+            $(".logo span").css('visibility', 'visible');
+            $(".logo span").css('margin-left', '-10px');
+            $(".icon-a").css('visibility', 'hidden');
+            $(".icons").css('visibily', 'visible');
+            $(".icons").css('margin-left', '-8px');
+            $(".nav").css('display', 'none');
+            $(".nav2").css('display', 'block');
+        });
+        $(".nav").click(function () {
+            $("#mysidenav").css('width', '300px');
+            $("#main").css('margin-left', '300px');
+            $(".logo").css('visibility', 'visible');
+            $(".icon-a").css('visibility', 'visible');
+            $(".icons").css('visibily', 'visible');
+            $(".nav").css('display', 'block');
+            $(".nav2").css('display', 'none');
+        });
+    </script>
+</body>
+
+</html>
