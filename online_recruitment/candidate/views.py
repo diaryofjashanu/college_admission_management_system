@@ -35,7 +35,19 @@ def aboutPage(request):
     return render(request ,'about.html')
 
 def categoryPage(request):
-    return render(request ,'category.html')
+    context = {
+        'categories': []
+    }
+    categories = Category.objects.all()
+    for category in categories:
+        vacancies = len(Job.objects.filter(category=category))
+        temp = {
+            'name': category.name,
+            'vacancies': vacancies
+        }
+        context['categories'].append(temp)
+
+    return render(request ,'category.html', context)
 
 def contactPage(request):
     return render(request ,'contact.html')
